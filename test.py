@@ -1,4 +1,8 @@
-a,b = map(str,input()[::-1].split())
 
+a=['1', '2', '3']
+a = set(a)
 
-print(max(int(a),int(b)))
+print(a)
+
+if '1' in a:
+    print("dlT")
