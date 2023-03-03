@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+
+    <div class="alert-box" , id="alert">
+        <p id="title">Alert 박스</p>
+        <button id="close"> X </button>
+    </div>
+
+    <button onclick="알림창('아이디', 'block')">버튼1</button>
+    <button onclick="알림창('비번', 'block')">버튼2</button>
+
+
+    <script>
+        document.getElementById('close').addEventListener('click', function() {
+            document.getElementById('alert').style.display = 'none'
+        });
+
+
+        function 알림창(message, vision) {
+            document.getElementById('title').innerHTML = message;
+            document.getElementById('alert').style.display = vision;
+        }
+    </script>
+
+</body>
+
+</html>

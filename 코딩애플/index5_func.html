@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+
+    <div class="alert-box" , id="alert">
+        <p id="title">Alert 박스</p>
+        <button onclick="알림창닫기('none')">닫기</button>
+    </div>
+
+    <button onclick="알림창열기()">버튼1</button>
+    <button onclick="알림창열기2('block')">버튼2</button>
+
+
+    <script>
+        function 알림창열기() {
+            document.getElementById('title').innerHTML = '아이디입력하셈';
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function 알림창열기2(구멍) {
+            document.getElementById('title').innerHTML = '비번입력하셈';
+            document.getElementById('alert').style.display = 구멍;
+        }
+
+        function 알림창닫기(구멍) {
+            document.getElementById('alert').style.display = 구멍;
+        }
+    </script>
+
+</body>
+
+</html>
